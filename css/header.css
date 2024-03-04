@@ -1,0 +1,9 @@
+.header {
+    padding: 5px;
+    text-align: center;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 500;
+    background: #FEFAE0;
+    color: #1E1E1E;
+    font-size: 15px;
+  }
