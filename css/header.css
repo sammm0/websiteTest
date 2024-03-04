@@ -14,12 +14,26 @@
     padding: 14px 16px;
     text-decoration: none;
     font-family: "Inter-Bold", Helvetica;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 15px;
+    position: relative;
 }
 
-/* Change the color of links on hover */
-.header a:hover {
-    background-color: #ddd;
-    color: #1E1E1E;
+/* animated underline of the link on hover */
+.header a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.header a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
