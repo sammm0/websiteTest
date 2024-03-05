@@ -1,27 +1,26 @@
 .desktop {
-    background-color: #FEFAE0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .desktop .div-wrapper {
-    background-color: #FEFAE0;
-    width: 100%;
-    height: 100vh; /* Set height to fill the screen */
-    position: relative;
-  }
-  
-  .desktop .text-wrapper {
-    position: absolute;
-    top: 30vw;
-    left: 18vw;
-    font-family: "Inter-Bold", Helvetica;
-    font-weight: 700;
-    color: #1E1E1E;
-    font-size: 6vw; /* Use vw unit for font size */
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
+  background-color: #fefae0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.desktop .div-wrapper {
+  background-color: #fefae0;
+  width: 100%;
+  height: 100vh; /* Set height to fill the screen */
+  position: relative;
+}
+
+.desktop .text-wrapper {
+  position: absolute;
+  top: 30vw;
+  left: 18vw;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #1e1e1e;
+  font-size: 6vw; /* Use vw unit for font size */
+  letter-spacing: 0;
+  line-height: normal;
+}
