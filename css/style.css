@@ -26,7 +26,7 @@
 }
 
 .desktop .view-wrapper {
-  position: absolute;
+  position: relative;
   background-color: #fefae0;
   height: 4vw;
   width: 100%;
@@ -63,4 +63,22 @@
 .desktop a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.desktop .connect-wrapper {
+  position: relative;
+  background-color: #fefae0;
+  height: 20vh;
+  width: 100%;
+}
+
+.desktop .connect {
+  position: absolute;
+  text-align: center;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 600;
+  color: #1e1e1e;
+  font-size: 1.5vw; /* Use vw unit for font size */
+  letter-spacing: 0;
+  line-height: normal;
 }
