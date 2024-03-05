@@ -24,3 +24,43 @@
   letter-spacing: 0;
   line-height: normal;
 }
+
+.desktop .view-wrapper {
+  position: absolute;
+  background-color: #fefae0;
+  height: 4vw;
+  width: 100%;
+}
+
+.desktop a {
+  position: absolute;
+  left: 2vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  text-decoration: none;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 600;
+  color: #1e1e1e;
+  font-size: 1vw; /* Use vw unit for font size */
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* animated underline of the link on hover */
+.desktop a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.desktop a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
