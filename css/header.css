@@ -1,43 +1,43 @@
 .header {
-    background-color: #FEFAE0;
-    overflow: hidden;
-    display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999; /* Add this line to bring the header on top */
+  background-color: #fefae0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999; /* Add this line to bring the header on top */
 }
 
 /* Style the links inside the navigation bar */
 .header a {
-    float: left;
-    color: #1E1E1E;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: "Inter-Bold", Helvetica;
-    font-weight: 600;
-    font-size: 15px;
-    position: relative;
+  float: left;
+  color: #1e1e1e;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 600;
+  font-size: 15px;
+  position: relative;
 }
 
 /* animated underline of the link on hover */
 .header a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background-color: #0087ca;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 
 .header a:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }

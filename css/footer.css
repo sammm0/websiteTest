@@ -1,0 +1,20 @@
+.footer {
+    position: absolute;
+    background-color: #fefae0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    width: 100%;
+}
+
+.footer .footer-text {
+    color: #1e1e1e;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+}
