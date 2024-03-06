@@ -73,6 +73,7 @@
 }
 
 .desktop .connect {
+  left: 2vw;
   position: absolute;
   text-align: center;
   font-family: "Inter-Regular", Helvetica;
