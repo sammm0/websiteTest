@@ -1,15 +1,44 @@
-var blob = document.getElementById("large-blob");
+var lblob = document.getElementById("large-blob");
+var sblob = document.getElementById("small-blob");
 
-setTimeout(function () {
+function getRandomInt(min, max) {
+    const minCeiled = Math.ceil(min);
+    const maxFloored = Math.floor(max);
+    return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // The maximum is exclusive and the minimum is inclusive
+}
 
-    //Change the style.top to 50%, You can also do this in px
-    blob.style.top = '50%';
+function movesBlob() {
 
-    //Change the style.top to 50%, You can also do this in px
-    blob.style.left = '50%';
+    // Change the style.top and style.left to random values
+    sblob.style.top = getRandomInt(15, 35) + 'vw';
+    sblob.style.left = getRandomInt(30, 70) + 'vw';
 
-    //Add the transform so it can be centered in the viewport
-    blob.style.transform = 'translate(-50%,-50%)';
+    // Add the transform so it can be centered in the viewport
+    // blob.style.transform = 'translate(-50%,-50%)';
 
-    //Add the timeout below in milliseconds.
-}, 1000)
+    // Call moveBlob again after a certain delay
+
+    var stime = getRandomInt(2000, 5000);
+
+    setTimeout(movesBlob, stime);
+}
+
+function movelBlob() {
+
+    // Change the style.top and style.left to random values
+    lblob.style.top = getRandomInt(15, 35) + 'vw';
+    lblob.style.left = getRandomInt(30, 70) + 'vw';
+
+    // Add the transform so it can be centered in the viewport
+    // blob.style.transform = 'translate(-50%,-50%)';
+
+    // Call moveBlob again after a certain delay
+
+    var ltime = getRandomInt(2000, 5000);
+
+    setTimeout(movelBlob, ltime);
+}
+
+// Start the motion
+movesBlob();
+movelBlob();
