@@ -10,8 +10,8 @@ function getRandomInt(min, max) {
 function movesBlob() {
 
     // Change the style.top and style.left to random values
-    sblob.style.top = getRandomInt(15, 35) + 'vw';
-    sblob.style.left = getRandomInt(30, 70) + 'vw';
+    sblob.style.top = getRandomInt(20, 30) + 'vw';
+    sblob.style.left = getRandomInt(48, 65) + 'vw';
 
     // Add the transform so it can be centered in the viewport
     // blob.style.transform = 'translate(-50%,-50%)';
@@ -26,8 +26,8 @@ function movesBlob() {
 function movelBlob() {
 
     // Change the style.top and style.left to random values
-    lblob.style.top = getRandomInt(15, 35) + 'vw';
-    lblob.style.left = getRandomInt(30, 70) + 'vw';
+    lblob.style.top = getRandomInt(19, 30) + 'vw';
+    lblob.style.left = getRandomInt(49, 65) + 'vw';
 
     // Add the transform so it can be centered in the viewport
     // blob.style.transform = 'translate(-50%,-50%)';
