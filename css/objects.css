@@ -5,7 +5,7 @@
     border-radius: 187px;
     transition: all 2s;
     filter: blur(5vw);
-    background: radial-gradient(50% 50% at 50% 50%, rgb(170, 68, 101) 33%, rgb(255, 166, 158) 100%);
+    background: radial-gradient(50% 50% at 50% 50%, #aa4465 33%, #ffa69e 100%);
 }
 
 #small-blob {
@@ -15,5 +15,5 @@
     border-radius: 187px;
     transition: all 2s;
     filter: blur(3vw);
-    background: radial-gradient(50% 50% at 50% 50%, rgb(212, 159, 163) 50.5%, rgb(213, 117, 130) 100%);
+    background: radial-gradient(50% 50% at 50% 50%, #D49FA3 50.5%, #D57582 100%);
 }
