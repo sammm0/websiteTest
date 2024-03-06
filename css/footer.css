@@ -3,8 +3,10 @@
     background-color: #fefae0;
     overflow: hidden;
     display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
+    justify-content: center;
+    /* Center the content horizontally */
+    align-items: center;
+    /* Center the content vertically */
     width: 100%;
 }
 

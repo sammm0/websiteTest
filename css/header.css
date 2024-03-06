@@ -2,12 +2,15 @@
   background-color: #fefae0;
   overflow: hidden;
   display: flex;
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Center the content vertically */
+  justify-content: center;
+  /* Center the content horizontally */
+  align-items: center;
+  /* Center the content vertically */
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 999; /* Add this line to bring the header on top */
+  z-index: 999;
+  /* Add this line to bring the header on top */
 }
 
 /* Style the links inside the navigation bar */
@@ -32,7 +35,7 @@
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
+  background-color: #AA4465;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
