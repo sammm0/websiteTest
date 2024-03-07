@@ -4,6 +4,7 @@ var biop1 = document.getElementById("bio-p1");
 var biop2 = document.getElementById("bio-p2");
 var biop3 = document.getElementById("bio-p3");
 var bioimg = document.getElementById("bio-img");
+var homeheight = document.getElementById("div-wrap");
 
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     biostack.style.flexDirection = "column";
@@ -15,6 +16,7 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     biop2.style.margin = "0.5em 0";
     bioimg.style.width = "60%";
     bioimg.style.paddingBottom = "2em";
+    homeheight.style.height = "75vh";
 } else {
     biostack.style.flexDirection = "row";
 }
