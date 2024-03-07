@@ -30,7 +30,7 @@
 .desktop .view-wrapper {
   position: relative;
   background-color: #fefae0;
-  height: 4vw;
+  height: 3em;
   width: 100%;
 }
 
@@ -43,7 +43,7 @@
   font-family: "Inter-Regular", Helvetica;
   font-weight: 600;
   color: #1e1e1e;
-  font-size: 1vw;
+  font-size: 1em;
   /* Use vw unit for font size */
   letter-spacing: 0;
   line-height: normal;

@@ -21,6 +21,7 @@ body {
 
 #bio-content img {
   width: 15vw;
+  height: auto;
   /* adjust the size as needed */
   margin-right: 4vw;
   padding: 4vw;
