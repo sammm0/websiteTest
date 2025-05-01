@@ -1,0 +1,80 @@
+/* websiteTest/css/projects.css */
+.projects-gallery {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(300px, 1fr)
+    ); /* Responsive grid */
+    gap: 0; /* Remove gaps for seamless grid */
+    padding: 0; /* Remove padding */
+    width: 100%; /* Full width */
+    margin: 60px 0 0 0; /* Only top margin for header */
+    background-color: #fefae0; /* Match header background color */
+}
+
+.project {
+    position: relative; /* For positioning the text overlay */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background-color: #fefae0; /* Match header background color */
+}
+
+.project::before {
+    content: "";
+    display: block;
+    padding-top: 100%; /* Create 1:1 aspect ratio */
+}
+
+.project a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.project img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures images maintain aspect ratio */
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.project:hover img {
+    transform: scale(1.05);
+}
+
+.project h2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 15px;
+    font-family: "Inter-Bold", Helvetica;
+    font-size: 18px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+    text-align: left;
+}
+
+/* Desktop container should be full width and match background color */
+.desktop {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #fefae0; /* Match header background color */
+}
+
+body {
+    background-color: #fefae0; /* Match header background color */
+}
